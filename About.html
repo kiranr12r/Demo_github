@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e293b,#0f172a);
+    min-height:100vh;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:100px auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:40px;
+    animation:slideUp 1s ease;
+}
+
+h1{
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+p{
+    line-height:1.8;
+    color:#dbeafe;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+@keyframes slideUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1>About Us</h1>
-    <p>Welcome to our website! We are dedicated to providing you with the best experience possible. Our team is passionate about delivering high-quality content and services to our users. Thank you for visiting us!</p>
-    
+
+<div class="container">
+    <div class="card">
+        <h1>About Us</h1>
+
+        <p>
+            We are passionate about creating innovative
+            digital experiences. Our mission is to deliver
+            modern, scalable and user-friendly solutions.
+        </p>
+
+        <a href="index.html" class="btn">
+            Back Home
+        </a>
+    </div>
+</div>
+
 </body>
 </html>
